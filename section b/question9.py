@@ -5,7 +5,7 @@ from mlxtend.frequent_patterns import association_rules
 from mlxtend.preprocessing import TransactionEncoder
 import matplotlib.pyplot as plt
 
-data = pd.read_csv(r"C:\Users\acer\Downloads\BreadBasket_DMS.csv") 
+data = pd.read_csv("BreadBasket_DMS.csv") 
 
 data= data.set_index(['Item'])
 filtered= data.drop(['NONE'])
@@ -74,7 +74,6 @@ finalrules= finalrules.drop_duplicates()
 print("All the pairs with minimum support their confidence: \n")
 finalrules.plot(x='combination', y= 'confidence',kind='bar', color='blue')
 plt.rcParams["figure.figsize"] = [10, 6]
-plt.xlabel("Item Pairs")
 plt.ylabel("Confidence(%)")
 plt.title("Optimal Pairs wrt optimal support-confidence")
 plt.show()

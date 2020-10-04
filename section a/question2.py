@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 plt.rcParams["figure.figsize"] = [10, 6]
 plt.xlabel("Top Items sold")
 plt.ylabel("Sales in 2016")
-data = pd.read_csv(r"C:\Users\acer\Downloads\BreadBasket_DMS.csv") 
+data = pd.read_csv("BreadBasket_DMS.csv") 
 
 data['Date'] = pd.to_datetime(data['Date'],format='%d-%m-%Y', errors='coerce')
 data['year'] = data['Date'].dt.year

@@ -1,7 +1,7 @@
 #%%
 import pandas as pd
 import matplotlib.pyplot as plt
-data = pd.read_csv(r"C:\Users\acer\Downloads\BreadBasket_DMS.csv")
+data = pd.read_csv("BreadBasket_DMS.csv")
 
 #Removing NONE values
 data= data.set_index(['Item'])

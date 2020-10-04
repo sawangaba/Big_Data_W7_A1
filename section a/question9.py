@@ -6,7 +6,7 @@ plt.xlabel("Date")
 plt.ylabel("Sales")
 
 
-data = pd.read_csv(r"C:\Users\acer\Downloads\BreadBasket_DMS.csv") 
+data = pd.read_csv("BreadBasket_DMS.csv") 
 
 data['Date'] = pd.to_datetime(data['Date'],format='%d-%m-%Y', errors='coerce')
 data['year'] = data['Date'].dt.year

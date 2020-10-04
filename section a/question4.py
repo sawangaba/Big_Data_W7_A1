@@ -5,7 +5,7 @@ plt.rcParams["figure.figsize"] = [10, 6]
 plt.xlabel("Top Items sold")
 plt.ylabel("Sales in 2017")
 
-data = pd.read_csv(r"C:\Users\acer\Downloads\BreadBasket_DMS.csv") 
+data = pd.read_csv("BreadBasket_DMS.csv") 
 data= data.set_index(['Item'])
 data= data.drop(['NONE'])
 data.reset_index(inplace = True)

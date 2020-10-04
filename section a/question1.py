@@ -6,7 +6,7 @@ plt.rcParams["figure.figsize"] = [10, 6]
 plt.xlabel("Items")
 plt.ylabel("Sales")
 
-data = pd.read_csv(r"C:\Users\acer\Downloads\BreadBasket_DMS.csv") 
+data = pd.read_csv("BreadBasket_DMS.csv") 
 
 #Now we will firstchange index to item to sort items into new datasets without 'NONE' type of Items.
 items = data.set_index(['Item'])

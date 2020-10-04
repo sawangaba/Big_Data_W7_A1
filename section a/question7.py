@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 plt.rcParams["figure.figsize"] = [10, 5]
 plt.xlabel("Hours")
 plt.ylabel("Sales")
-data = pd.read_csv(r"C:\Users\acer\Downloads\BreadBasket_DMS.csv")
+data = pd.read_csv("BreadBasket_DMS.csv")
 
 data= data.set_index(['Item'])
 data= data.drop(['NONE'])
